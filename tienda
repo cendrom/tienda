@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Plantas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Página de destino -->
+  <section id="landing-page">
+    <div class="background">
+      <h1 class="company-name">Green Haven</h1>
+      <p class="description">Bienvenido a Green Haven, tu lugar para plantas de interior únicas y vibrantes que iluminan tu espacio.</p>
+      <a href="#products" class="btn">Comenzar</a>
+    </div>
+  </section>
+
+  <!-- Página de listado de productos -->
+  <header>
+    <nav>
+      <a href="#landing-page">Inicio</a>
+      <a href="#products">Productos</a>
+      <a href="#cart">Carrito (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+  <section id="products">
+    <h2>Listado de Productos</h2>
+    <div class="categories">
+      <div class="category">
+        <h3>Plantas Pequeñas</h3>
+        <div class="product">
+          <img src="mini_plant.jpg" alt="Mini Plant" class="thumbnail">
+          <p>Mini Plant - $5</p>
+          <button class="add-to-cart" data-name="Mini Plant" data-price="5">Añadir a la cesta</button>
+        </div>
+        <div class="product">
+          <img src="aloe.jpg" alt="Aloe Vera" class="thumbnail">
+          <p>Aloe Vera - $8</p>
+          <button class="add-to-cart" data-name="Aloe Vera" data-price="8">Añadir a la cesta</button>
+        </div>
+      </div>
+      <div class="category">
+        <h3>Plantas Medianas</h3>
+        <div class="product">
+          <img src="snake_plant.jpg" alt="Snake Plant" class="thumbnail">
+          <p>Snake Plant - $15</p>
+          <button class="add-to-cart" data-name="Snake Plant" data-price="15">Añadir a la cesta</button>
+        </div>
+      </div>
+      <div class="category">
+        <h3>Plantas Grandes</h3>
+        <div class="product">
+          <img src="monstera.jpg" alt="Monstera" class="thumbnail">
+          <p>Monstera - $20</p>
+          <button class="add-to-cart" data-name="Monstera" data-price="20">Añadir a la cesta</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Página del carrito -->
+  <section id="cart">
+    <h2>Carrito de Compra</h2>
+    <div id="cart-items"></div>
+    <p>Total de plantas: <span id="total-count">0</span></p>
+    <p>Costo total: $<span id="total-price">0</span></p>
+    <button id="checkout">Pagar (Próximamente)</button>
+    <button id="continue-shopping" onclick="location.href='#products'">Continuar comprando</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
